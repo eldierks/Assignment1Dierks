@@ -1,4 +1,4 @@
-#Program Name:Assignment1.py
+#Program Name:Assignment1Dierks.py
 #Course: IT3883/Section 01
 #Student Name: Erica Dierks
 #Assignment Number: Assignment 1
@@ -6,7 +6,7 @@
 #Purpose: This program creates a menu that allows the user to add,
 #clear, or display text that is stored in an input buffer
 
-input_buffer = ""
+saved_text = ""
 
 while True:
     print("\nMenu")
@@ -15,21 +15,21 @@ while True:
     print("3. Display the input buffer")
     print("4. Exit")
 
-    choice = input("Enter your choice: ")
+    menu_choice = input("Enter your choice: ")
 
-    if choice == "1":
+    if menu_choice == "1":
         text = input("Enter a string: ")
-        input_buffer += text
+        saved_text += text
         print("Data added to the input buffer.")
 
-    elif choice == "2":
-        input_buffer = ""
+    elif menu_choice == "2":
+        saved_text = ""
         print("Input buffer cleared.")
 
-    elif choice == "3":
-        print("Input buffer:", input_buffer)
+    elif menu_choice == "3":
+        print("Input buffer:", saved_text)
 
-    elif choice == "4":
+    elif menu_choice == "4":
         print("Exiting program.")
         break
 
